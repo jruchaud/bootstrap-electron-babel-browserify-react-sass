@@ -1,7 +1,7 @@
 {
-  "name": "wit",
+  "name": "test-electron-babel-browserify-react-sass",
   "version": "1.0.0",
-  "description": "Work Is Tags",
+  "description": "An example",
   "main": "./src/js/main.js",
   "scripts": {
     "start": "electron .",
