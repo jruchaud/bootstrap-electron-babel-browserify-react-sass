@@ -1,7 +1,7 @@
 {
-  "name": "test-electron-babel-browserify-react-sass",
+  "name": "bootstrap-electron-babel-browserify-react-sass",
   "version": "1.0.0",
-  "description": "An example",
+  "description": "Bootstrap with electron, babel, browserify, react and sass",
   "main": "./src/js/main.js",
   "scripts": {
     "start": "electron .",
