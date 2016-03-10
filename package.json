@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jruchaud/bootstrap-electron-babel-browserify-react-sass.git"
+    "url": "git://github.com/jruchaud/bootstrap-electron-babel-react-sass.git"
   },
   "author": "jruchaud",
   "license": "MIT",
