@@ -7,7 +7,7 @@
     "start": "electron .",
     "clean": "rimraf ./build/**",
     "build": "npm run build-js && npm run build-scss",
-    "build-scss": "node-sass --output-style compressed  src/scss/* > build/style.css",
+    "build-scss": "node-sass --output-style compressed --source-map-embed -r src/scss/main.scss build/style.css",
     "build-js": "browserify src/js/app.js -t [ babelify --presets [ es2015 react ] ] -dv > build/app.js",
     "watch": "npm run watch-js & npm run watch-scss",
     "watch-js": "watchify src/js/app.js -o build/main.js -t [ babelify --presets [ es2015 react ] ] -dv",
