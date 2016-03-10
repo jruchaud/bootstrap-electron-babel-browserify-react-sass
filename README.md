@@ -1,7 +1,7 @@
-# Electron + babel + browserify + react + sass
+# Electron + babel + react + sass
 
 What project contains ?
-- Simple bootstrap with electron, babel, browserify, react and sass
+- Simple bootstrap with electron, babel, react and sass
 - Use npm for compilation
 - Eslint
 
@@ -10,12 +10,12 @@ Installation
 
 Clone the repository:
 ```
-git clone https://github.com/jruchaud/bootstrap-electron-babel-browserify-react-sass.git
+git clone https://github.com/jruchaud/bootstrap-electron-babel-react-sass.git
 ```
 
 Go into folder:
 ```
-cd bootstrap-electron-babel-browserify-react-sass.git
+cd bootstrap-electron-babel-react-sass.git
 ```
 
 Install the libraries:
