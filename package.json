@@ -5,16 +5,21 @@
   "main": "./src/js/main.js",
   "scripts": {
     "start": "electron .",
+    "clean": "rimraf ./build/**",
     "build": "npm run build-js && npm run build-scss",
-    "watch": "npm run watch-js && npm run watch-scss",
     "build-scss": "node-sass --output-style compressed  src/scss/* > build/style.css",
     "build-js": "browserify src/js/app.js -t [ babelify --presets [ es2015 react ] ] -dv > build/app.js",
+    "watch": "npm run watch-js & npm run watch-scss",
     "watch-js": "watchify src/js/app.js -o build/main.js -t [ babelify --presets [ es2015 react ] ] -dv",
     "watch-scss": "nodemon -e scss -x 'npm run build-scss'",
     "package-all": "npm run build && electron-packager ./ App --platform=all --arch=all --version=0.35.6 --out build",
     "package-linux": "npm run build && electron-packager ./ App --platform=linux --arch=x64 --version=0.35.6 --out build",
     "package-win": "npm run build && electron-packager ./ App --platform=win32 --arch=x64 --version=0.35.6 --out build",
     "package-mac": "npm run build && electron-packager ./ App --platform=darwin --arch=x64 --version=0.35.6 --out build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jruchaud/bootstrap-electron-babel-browserify-react-sass.git"
   },
   "author": "jruchaud",
   "license": "MIT",
@@ -33,6 +38,7 @@
     "eslint-plugin-react": "^4.2.1",
     "node-sass": "^3.4.2",
     "nodemon": "^1.9.1",
+    "rimraf": "^2.5.2",
     "watchify": "x.x.x"
   }
 }
